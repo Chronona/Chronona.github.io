@@ -1,13 +1,17 @@
-var now = new Date();
-function LoadProc() {
-  var target = document.getElementById("DateTimeDisp");
 
-  var Year = now.getFullYear();
-  var Month = now.getMonth()+1;
-  var Date = now.getDate();
-  var Hour = now.getHours();
-  var Min = now.getMinutes();
-  var Sec = now.getSeconds();
-
-  target.innerHTML = Year + "年" + Month + "月" + Date + "日" + Hour + ":" + Min + ":" + Sec;
+function set2fig(num) {
+    // 桁数が1桁だったら先頭に0を加えて2桁に調整する
+    let ret;
+    if (num < 10) { ret = "0" + num; }
+    else { ret = num; }
+    return ret;
 }
+function showClock() {
+    let nowTime = new Date();
+    let nowHour = set2fig(nowTime.getHours());
+    let nowMin = set2fig(nowTime.getMinutes());
+    let nowSec = set2fig(nowTime.getSeconds());
+    let msg = "現在時刻: " + nowHour + ":" + nowMin + ":" + nowSec;
+    document.getElementById("RealtimeClockArea").innerHTML = msg;
+}
+setInterval('showClock()', 1000);

@@ -2,16 +2,10 @@
 
 test page
 
+<body>
 
+<p id="RealtimeClockArea">時刻表示</p>
 
-
-
-<body onload="LoadProc();">
-
-現在の時刻:
-<div id="DateTimeDisp"></div>
-
-<br>
 
 <button type="button" onclick="ShowAlart()">クリック</button>
 
@@ -24,3 +18,5 @@ test page
 
 
 </body>
+
+
