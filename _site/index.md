@@ -2,23 +2,25 @@
 
 test page
 
-<script type="text/javascript">
-    var now = new Date();
-    function LoadProc() {
-      var target = document.getElementById("DateTimeDisp");
 
-      var Year = now.getFullYear();
-      var Month = now.getMonth()+1;
-      var Date = now.getDate();
-      var Hour = now.getHours();
-      var Min = now.getMinutes();
-      var Sec = now.getSeconds();
 
-      target.innerHTML = Year + "年" + Month + "月" + Date + "日" + Hour + ":" + Min + ":" + Sec;
-    }
 
-</script>
+
 <body onload="LoadProc();">
+
 現在の時刻:
-   <div id="DateTimeDisp"></div>
+<div id="DateTimeDisp"></div>
+
+<br>
+
+<button type="button" onclick="ShowAlart()">クリック</button>
+
+
+<!--script読み込み-->
+
+<script src="./js/hello_world.js"></script>
+
+<script src="./js/date.js"></script>
+
+
 </body>
