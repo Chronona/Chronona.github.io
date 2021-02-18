@@ -1,4 +1,9 @@
-# Index
+---
+layout: default
+title: トップページ
+---
+
+## Index
 
 test page
 
