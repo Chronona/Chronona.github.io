@@ -1,3 +1,4 @@
+# テーマ設定
 #theme: jekyll-theme-architect
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-dinky
@@ -12,8 +13,17 @@ theme: jekyll-theme-minimal
 #theme: jekyll-theme-tactile
 #theme: jekyll-theme-time machine
 
-title: [my page]
-description: [只今準備中]
+# ページタイトル
+title: my page
+
+#説明
+description: 只今準備中
+
+# ロゴの位置
 #logo: [up]
-show_downloads: [true]
+
+# DLアイコン
+# show_downloads: [true]
+
+# googleアナリティクス
 #google_analytics: [Your Google Analytics tracking ID]
