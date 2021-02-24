@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>トップページ | my page</title>
+<title>brython test | my page</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="トップページ" />
+<meta property="og:title" content="brython test" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="只今準備中" />
 <meta property="og:description" content="只今準備中" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://localhost:4000/link/brython_test.html" />
+<meta property="og:url" content="http://localhost:4000/link/brython_test.html" />
 <meta property="og:site_name" content="my page" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="トップページ" />
+<meta property="twitter:title" content="brython test" />
 <script type="application/ld+json">
-{"description":"只今準備中","@type":"WebSite","url":"http://localhost:4000/","name":"my page","headline":"トップページ","@context":"https://schema.org"}</script>
+{"description":"只今準備中","@type":"WebPage","url":"http://localhost:4000/link/brython_test.html","headline":"brython test","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=78911d2852c7cd3713f310250821aa26f23ac4c5">
@@ -45,23 +45,45 @@
       </header>
       <section>
 
-      <h2 id="index">Index</h2>
+      <small></small>
+<h1>brython test</h1>
 
-<p>test page</p>
+<p class="view">by </p>
 
-<p id="RealtimeClockArea">時刻表示</p>
+<html>
+  <head>
+    <script type="text/javascript" src="../brython/brython.js"></script>
+  </head>
+  <body onload="brython()">
+    <input id="text">
+    <button id="submit">送信</button>
+    <br>
+    <span id="text2" style="color:red;">青に変わって大きくなります。</span>
+    <button id="submit2">変える</button>
+  </body>
+  <script type="text/python">
+    from browser import document, alert
 
-<p><button type="button" onclick="ShowAlart()">クリック</button></p>
+    #イベント
+    def on_alert(e):
+      text = document["text"]
+      alert(text.value)
 
-<p><input type="file" /></p>
+    document["submit"].bind("click", on_alert)
 
-<!--script読み込み-->
+    def change_style(e):
+      text = document["text2"]
+      style = text.style
+      style.color = 'blue'
+      style.fontSize = '24px'
 
-<script src="./js/hello_world.js"></script>
+    document["submit2"].bind("click", change_style)
 
-<script src="./js/date.js"></script>
+  </script>
 
-<p><a href="/link/brython_test.html">brython_test</a></p>
+</html>
+
+
 
 
 

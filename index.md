@@ -7,13 +7,14 @@ title: トップページ
 
 test page
 
-<body>
 
 <p id="RealtimeClockArea">時刻表示</p>
 
 
 <button type="button" onclick="ShowAlart()">クリック</button>
 
+
+<input type="file">
 
 <!--script読み込み-->
 
@@ -22,6 +23,5 @@ test page
 <script src="./js/date.js"></script>
 
 
-</body>
-
+[brython_test](./link/brython_test.html)
 
