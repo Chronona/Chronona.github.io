@@ -23,5 +23,3 @@ test page
 <script src="./js/date.js"></script>
 
 
-[brython_test](./link/brython_test.html)
-
